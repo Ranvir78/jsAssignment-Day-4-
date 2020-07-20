@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<strong>FOR sqrt enter value only in first box & then click on sqrt button you got your output.</strong><br><br><br>
+<script type="text/javascript">
+	
+function add(){
+	var a , b ,c;
+	a=Number(document.getElementById("first").value);
+	b=Number(document.getElementById("second").value);
+	c=a+b;
+	document.getElementById("answer").value=c;
+}
+function mul(){
+	var a , b ,c;
+	a=Number(document.getElementById("first").value);
+	b=Number(document.getElementById("second").value);
+	c=a*b;
+	document.getElementById("answer").value=c;
+}
+function div(){
+	var a , b ,c;
+	a=Number(document.getElementById("first").value);
+	b=Number(document.getElementById("second").value);
+	c=a/b;
+	document.getElementById("answer").value=c;
+}
+function sub(){
+	var a , b ,c;
+	a = Number(document.getElementById("first").value);
+	b=Number(document.getElementById("second").value);
+	c=a-b;
+	document.getElementById("answer").value=c;
+}
+function percent(){
+var a , b ,c ;
+	a=Number(document.getElementById("first").value);
+	b=Number(document.getElementById("second").value);
+	c=a/b*100;
+     
+	document.getElementById("answer").value=c;
+}
+function sqrt(){
+var a , b ,c ;
+	a = Number(document.getElementById("first").value);
+	 b = Math.sqrt(a);
+     
+	document.getElementById("answer").value=b;
+}
+</script>
+enter the first number: <br><input id="first"><br>
+
+enter the second number:<br><input id="second"><br>
+OUTPUT:               <br>  <input id="answer"><br><br>
+<button onclick="add()">add</button>
+<button onclick="mul()">mul</button>
+<button onclick="div()">div</button>
+<button onclick="sub()">sub</button>
+<button onclick="percent()">per</button>
+<button onclick="sqrt()">sqrt</button>
+
+
+
+</body>
+</html>
